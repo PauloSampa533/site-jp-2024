@@ -66,8 +66,8 @@ nav ul li a:hover {
   text-decoration: none;
   border-radius: 50px;
   font-weight: bold;
-  animation: pulse 1.0s infinite;
-  margin-left: 150px;
+  animation: pulse 0.5s infinite;
+  margin-left: 10px;
   
 }
 
@@ -138,52 +138,67 @@ section {
 }
 
 /* Galeria Carrossel */
-.carousel-wrapper {
+.galeria {
+  margin-bottom: 40px;
+}
+
+.carousel-wrapper-auto {
   position: relative;
-  overflow: hidden;
   width: 100%;
-  max-width: 800px;
+  max-width: 600px; /* Limita a largura máxima das imagens */
   margin: 0 auto;
 }
 
-.carousel {
+.carousel-auto {
   display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-.carousel-item {
-  min-width: 100%;
-  box-sizing: border-box;
+.carousel-item-auto {
+  display: none;
+  width: 400%;
   text-align: center;
+  
 }
 
-.carousel-item img {
-  width: 60%;
-  height: auto;
-  border-radius: 8px;
+.carousel-item-auto.active {
+  display: block;
 }
 
-.carousel-control {
+.carousel-item-auto img {
+  width: 85%; /* Ajusta a imagem para ocupar 100% do container */
+  height: auto; /* Mantém a proporção da imagem */
+  max-height: 350px; /* Controla a altura máxima das imagens */
+  object-fit: cover; /* Assegura que a imagem seja cortada se for muito alta */
+}
+
+.carousel-control-auto {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   z-index: 10;
-  font-size: 2rem;
 }
 
-.carousel-control.prev {
-  left: 10px;
+.carousel-control-auto.prev {
+  left: 0;
 }
 
-.carousel-control.next {
-  right: 10px;
+.carousel-control-auto.next {
+  right: 0;
 }
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
 
 /* Rodapé */
 footer {
