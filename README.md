@@ -5,4 +5,4 @@
  Listas de Tarefas:
 
 - [ ] terminar informações texto html
-- [x] terminar informações Pousadas
+- [ ] terminar informações Pousadas
