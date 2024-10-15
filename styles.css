@@ -1,0 +1,214 @@
+/* Corpo e layout geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 0;
+  color: #333;
+  background-color: #0cc0df;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  padding: 5px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 90px;
+  margin-right: 5px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 2px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  color: #0cc0df;
+}
+
+.cta-button {
+  background-color: #0cdf1e;
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  animation: pulse 0.5s infinite;
+  margin-left: 10px;
+  
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.cta-button:hover {
+  background-color: #128C7E;
+}
+
+/* Banner */
+.banner {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.family-image img {
+  width: 55%;
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0px px 8px rgba(0, 0, 0, 0.3);
+  position:absolute;
+  bottom: auto;
+  right: 100px;
+  
+}
+/*videos*/
+.video-wrapper{
+  width: 65%;
+  border-radius: 10%;
+  margin-left: 20%;
+}
+
+/* Seções */
+section {
+  padding: 60px 20px;
+}
+
+.sobre-nos, .servicos, .galeria, .contato {
+  background-color: #fff;
+  color: #174a8d;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Galeria Carrossel */
+.galeria {
+  margin-bottom: 40px;
+}
+
+.carousel-wrapper-auto {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Limita a largura máxima das imagens */
+  margin: 0 auto;
+}
+
+.carousel-auto {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item-auto {
+  display: none;
+  width: 400%;
+  text-align: center;
+  
+}
+
+.carousel-item-auto.active {
+  display: block;
+}
+
+.carousel-item-auto img {
+  width: 85%; /* Ajusta a imagem para ocupar 100% do container */
+  height: auto; /* Mantém a proporção da imagem */
+  max-height: 350px; /* Controla a altura máxima das imagens */
+  object-fit: cover; /* Assegura que a imagem seja cortada se for muito alta */
+}
+
+.carousel-control-auto {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-control-auto.prev {
+  left: 0;
+}
+
+.carousel-control-auto.next {
+  right: 0;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+/* Rodapé */
+footer {
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-icon img {
+  height: 40px;
+  margin: 0 10px;
+}
