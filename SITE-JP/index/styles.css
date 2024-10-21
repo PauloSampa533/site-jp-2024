@@ -144,8 +144,8 @@ section {
 
 .carousel-wrapper-auto {
   position: relative;
-  width: 100%;
-  max-width: 600px; /* Limita a largura máxima das imagens */
+  width: 90%;
+  max-width: 400px; /* Limita a largura máxima das imagens */
   margin: 0 auto;
 }
 
