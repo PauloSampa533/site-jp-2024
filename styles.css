@@ -28,7 +28,7 @@ header .container {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1px;
+  padding: 5px 0px;
 }
 
 .logo img {
