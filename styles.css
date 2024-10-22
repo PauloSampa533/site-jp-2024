@@ -15,7 +15,7 @@ header {
   width: 100%;
   background-color: rgba(51, 51, 51, 0.8);
   color: #fff;
-  padding: 1px 0;
+  padding: 1px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -28,7 +28,7 @@ header .container {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1px;
 }
 
 .logo img {
@@ -62,12 +62,12 @@ nav ul li a:hover {
 .cta-button {
   background-color: #00fc15;
   color: #fff;
-  padding: 15px 20px;
+  padding: 20px 20px;
   text-decoration: none;
   border-radius: 50px;
   font-weight: bold;
   animation: pulse 0.5s infinite;
-  margin-left: 750px;
+  margin-left: 110px;
   
 }
 
