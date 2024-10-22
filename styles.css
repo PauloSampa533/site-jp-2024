@@ -15,7 +15,7 @@ header {
   width: 100%;
   background-color: rgba(51, 51, 51, 0.8);
   color: #fff;
-  padding: 5px 0;
+  padding: 1px 0;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -60,14 +60,14 @@ nav ul li a:hover {
 }
 
 .cta-button {
-  background-color: #00f715;
+  background-color: #00fc15;
   color: #fff;
   padding: 15px 20px;
   text-decoration: none;
   border-radius: 50px;
   font-weight: bold;
   animation: pulse 0.5s infinite;
-  margin-left: 10px;
+  margin-left: 750px;
   
 }
 
